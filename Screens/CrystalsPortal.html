@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="table_script.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Portal</title>
+    <link rel="stylesheet" href="crystals-page.css" />
+</head>
+<body>
+    <main id="admin-holder">
+        <h1>Crystal Portal</h1>
+<style>
+td {
+ width:26%;
+}
+#new_name{
+margin-left:20px;
+}
+#new_color{
+margin-left:10px;
+}
+#new_region{
+margin-left:30px;
+}
+</style>
+<div>
+<form align="center">
+Name:<input type="text" id="new_name"> <br><br>
+Color:<input type="text" id="new_position"><br><br>
+Description:<input type="text" id="new_age"><br><br>
+<input type="button" class="add" onclick="add_row();" value="Add New Crystal">
+</form>
+</div> 
+<br>
+
+
+<div id="wrapper">
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1 >
+<tr>
+<th>Name</th>
+<th>Color</th>
+<th>Description</th>
+</tr>
+
+<tr id="row1">
+<td id="name_row1">Amethyst</td>
+<td id="color_row1">Purple</td>
+<td id="description_row1">Description here</td>
+<td>
+<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+<input type="button" value="remove" class="delete" onclick="delete_row('1')">
+</td>
+</tr>
+
+<tr id="row2">
+<td id="name_row2">Citrine</td>
+<td id="color_row2">Orangel, Yellow</td>
+<td id="description_row2">Description here</td>
+<td>
+<input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+<input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+<input type="button" value="delete" class="delete" onclick="delete_row('2')">
+</td>
+</tr>
+
+<tr id="row3">
+<td id="name_row3">Fluorite</td>
+<td id="color_row3">Purple, Green, and Blue</td>
+<td id="description_row3">Description here</td>
+<td>
+<input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+<input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+<input type="button" value="delete" class="delete" onclick="delete_row('3')">
+</td>
+</tr>
+
+<tr id="row4">
+    <td id="name_row4">Rose Quartz</td>
+    <td id="color_row4">Pink, Clear</td>
+    <td id="description_row4">Description here</td>
+    <td>
+    <input type="button" id="edit_button4" value="Edit" class="edit" onclick="edit_row('4')">
+    <input type="button" id="save_button4" value="Save" class="save" onclick="save_row('4')">
+    <input type="button" value="delete" class="delete" onclick="delete_row('4')">
+    </td>
+</tr>
+
+<tr id="row5">
+    <td id="name_row5">Turquoise</td>
+    <td id="color_row5">Blue, Gold, Mix</td>
+    <td id="description_row5">Description here</td>
+    <td>
+    <input type="button" id="edit_button5" value="Edit" class="edit" onclick="edit_row('5')">
+    <input type="button" id="save_button5" value="Save" class="save" onclick="save_row('5')">
+    <input type="button" value="delete" class="delete" onclick="delete_row('5')">
+    </td>
+</tr>
+
+
+</table>
+</div>
+</body>
+</html>
